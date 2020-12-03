@@ -1,9 +1,9 @@
 /* Schema for SQL database/table. We haven't discussed this type of file yet */
-DROP DATABASE IF EXISTS employees;
+DROP DATABASE IF EXISTS employees_db;
 
 /* Create database */
-CREATE DATABASE employees;
-USE employees;
+CREATE DATABASE employees_db;
+USE employees_db;
 
 /* Create new table*/
 CREATE TABLE department (
