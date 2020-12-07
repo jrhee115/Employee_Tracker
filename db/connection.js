@@ -1,19 +1,3 @@
-// const mysql = require("mysql");
-
-// var connection = mysql.createConnection({
-//     host: "localhost",
-//     port: 9000,
-//     user: "root",
-//     password: "password",
-//     database: "employees"
-// });
-
-// connection.connect(function(err){
-//     if (err) throw err;
-// });
-
-// module.exports = connection; 
-
 const util = require("util");
 const mysql = require("mysql");
 
@@ -23,7 +7,7 @@ const connection = mysql.createConnection({
   user: "root",
   // Your password
   password: "password",
-  database: "employees"
+  database: "employees_db"
 });
 
 connection.connect();

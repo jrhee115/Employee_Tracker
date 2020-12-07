@@ -122,8 +122,6 @@ async function viewEmployeesByDepartment() {
     const departments = await db.findAllDepartments();
 
     const departmentChoices = departments.map(({ id, name }) => ({
-        // THIS OBJECT FOR EACH MANAGER WILL RETURN TO MAP() TO CONSTRUCT AN ARRAY TO BE RETURNED AND BE STORED TO managerChoices.
-        // YOUR CODE HERE
         name: name,
         value: id
     }));
@@ -148,9 +146,7 @@ async function viewEmployeesByDepartment() {
 async function updateEmployeeRole() {
     const employees = await db.findAllEmployees();
 
-    const employeeChoices = employees.map(({ id, first_name, last_name }) => ({
-        // THIS OBJECT FOR EACH MANAGER WILL RETURN TO MAP() TO CONSTRUCT AN ARRAY TO BE RETURNED AND BE STORED TO managerChoices.
-        // YOUR CODE HERE    
+    const employeeChoices = employees.map(({ id, first_name, last_name }) => ({    
         name: first_name + " " + last_name,
         value: id
 
@@ -282,9 +278,7 @@ async function addEmployee() {
 
     employee.role_id = roleId;
 
-    const managerChoices = employees.map(({ id, first_name, last_name }) => ({
-        // THIS OBJECT FOR EACH MANAGER WILL RETURN TO MAP() TO CONSTRUCT AN ARRAY TO BE RETURNED AND BE STORED TO managerChoices.
-        // YOUR CODE HERE    
+    const managerChoices = employees.map(({ id, first_name, last_name }) => ({  
         name: first_name + " " + last_name,
         value: id
 
